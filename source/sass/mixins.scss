@@ -1,0 +1,41 @@
+@mixin retina {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    @content;
+  }
+}
+
+@mixin retina-bg($img_path, $file_ext: "jpg") {
+  background-image: url("#{$img_path}.#{$file_ext}");
+
+  @supports (background-image: url("#{$img_path}.webp")) {
+    background-image: url("#{$img_path}.webp");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("#{$img_path}@2x.#{$file_ext}");
+
+    @supports (background-image: url("#{$img_path}@2x.webp")) {
+      background-image: url("#{$img_path}@2x.webp");
+    }
+  }
+}
+
+@mixin font($font_name, $file_name, $weight, $style) {
+  font-style: #{$style};
+  font-weight: #{$weight};
+  font-family: $font_name;
+
+  font-display: swap;
+  src: url("../fonts/#{$file_name}.woff2") format("woff2"),
+    url("../fonts/#{$file_name}.woff") format("woff");
+}
+
+@mixin fontFolder($font_name, $file__direct, $file_name, $weight, $style) {
+  font-style: #{$style};
+  font-weight: #{$weight};
+  font-family: $font_name;
+
+  font-display: swap;
+  src: url("../fonts/#{$file__direct}/#{$file_name}.woff2") format("woff2"),
+    url("../fonts/#{$file__direct}/#{$file_name}.woff") format("woff");
+}

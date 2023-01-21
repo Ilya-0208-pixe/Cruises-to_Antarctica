@@ -1,0 +1,15 @@
+@font-face {
+  @include font("Montserrat", Montserrat-Regular, 400, normal);
+}
+
+@font-face {
+  @include font("Montserrat", Montserrat-Bold, 700, normal);
+}
+
+@font-face {
+  @include font("Montserrat", Montserrat-Medium, 500, normal);
+}
+
+@font-face {
+  @include font("Montserrat", Montserrat-SemiBold, 600, normal);
+}

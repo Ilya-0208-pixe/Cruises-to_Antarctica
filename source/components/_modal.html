@@ -1,0 +1,27 @@
+<!-- Подложка под модальным окном -->
+<div class="overlay js-overlay-modal"></div>
+<!-- Модальные окна -->
+<div class="modal js-modal">
+  <div class="modal__container size">
+    <h2 class="size__title">Добавить в корзину</h2>
+    <p class="size__text">Выберите размер:</p>
+
+    <form class="size__form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="size__container">
+        <div class="size__item">
+          <input class="visually-hidden size__input" type="radio" name="size" id="size-s" value="size-s" checked>
+          <label class="size__label" for="size-s">S</label>
+        </div>
+        <div class="size__item">
+          <input class="visually-hidden size__input" type="radio" name="size" id="size-m" value="size-m" checked>
+          <label class="size__label" for="size-m">M</label>
+        </div>
+        <div class="size__item">
+          <input class="visually-hidden size__input" type="radio" name="size" id="size-l" value="size-m" checked>
+          <label class="size__label" for="size-l">L</label>
+        </div>
+      </div>
+      <button class="button size__submit" type="submit">Добавить</button>
+    </form>
+  </div>
+</div>

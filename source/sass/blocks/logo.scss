@@ -1,0 +1,35 @@
+.logo {
+  display: block;
+  width: 70px;
+  height: 38px;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  @media (max-width: $max-tablet) {
+    width: 38px;
+    height: 20px;
+  }
+
+  &:not([href]) {
+    pointer-events: none;
+  }
+
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.7;
+  }
+
+  &[href]:active {
+    opacity: 0.4;
+  }
+}
+
+.logo svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  fill: currentColor;
+}

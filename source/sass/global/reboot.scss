@@ -1,0 +1,36 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  min-width: 320px;
+
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-family;
+  color: #011c40;
+
+  grid-template-rows: auto 1fr auto;
+
+  @media (max-width: $tablet) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
+
+img {
+  max-width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}

@@ -1,0 +1,152 @@
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 36px;
+
+  @media (max-width: $max-tablet) {
+    align-items: start;
+    padding-top: 30px;
+  }
+}
+
+.nav__logo {
+  @media (max-width: $max-mobile) {
+    position: absolute;
+    top: 21px;
+    left: 16px;
+    z-index: 10;
+  }
+}
+
+.nav__toggle {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  z-index: 10;
+
+  display: none;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+
+  background-color: transparent;
+  background-image: url("../img/svg/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+
+  @media (max-width: $max-mobile) {
+    display: block;
+  }
+}
+
+.header--open .nav {
+  @media (max-width: $max-mobile) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    height: 100vh;
+    padding: 0;
+
+    background-color: rgba(0, 43, 102, 0.5);
+  }
+}
+
+.header--open .nav__wrapper {
+  @media (max-width: $max-mobile) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 37px;
+
+    height: 100vh;
+    padding-top: 85px;
+    padding-bottom: 50px;
+    overflow: auto;
+
+    background-color: #f9fbfd;
+  }
+}
+
+.header .nav__list {
+  @media (max-width: $max-mobile) {
+    display: none;
+  }
+}
+
+.header--open .nav__list {
+  @media (max-width: $max-mobile) {
+    display: block;
+  }
+}
+
+.header--open .nav__toggle {
+  @media (max-width: $max-mobile) {
+    right: 8px;
+
+    background-image: url("../img/svg/icon-close.svg");
+  }
+}
+
+.header--open .nav__logo {
+  @media (max-width: $max-mobile) {
+    color: #011c40;
+  }
+}
+
+.header--open .nav-menu__link {
+  @media (max-width: $max-mobile) {
+    color: #011c40;
+  }
+}
+
+.header--open .nav-menu__item {
+  @media (max-width: $max-mobile) {
+    margin-bottom: 28px;
+  }
+}
+
+.no-js .nav__toggle {
+  @media (max-width: $max-mobile) {
+    display: none;
+  }
+}
+
+.no-js .nav__wrapper {
+  @media (max-width: $max-mobile) {
+    margin: 0 -15px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+
+    background-color: #f9fbfd;
+  }
+}
+
+.no-js .nav__list {
+  @media (max-width: $max-mobile) {
+    display: block;
+  }
+}
+
+.no-js .nav__logo {
+  @media (max-width: $max-mobile) {
+    color: #011c40;
+  }
+}
+
+.no-js .nav-menu__link {
+  @media (max-width: $max-mobile) {
+    color: #011c40;
+  }
+}
+
+.no-js .nav-menu__item {
+  @media (max-width: $max-mobile) {
+    margin-bottom: 28px;
+  }
+}

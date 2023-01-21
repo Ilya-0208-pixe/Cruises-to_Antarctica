@@ -1,0 +1,36 @@
+.button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  font-family: $font-family;
+  text-align: center;
+  color: #011c40;
+  text-decoration: none;
+
+  background-color: #f9fbfd;
+  border: none;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+
+    background-color: #0059cd;
+    outline: none;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:disabled,
+  &--disabled {
+    color: #b1b1b1;
+
+    background-color: #c6c6c6;
+  }
+}

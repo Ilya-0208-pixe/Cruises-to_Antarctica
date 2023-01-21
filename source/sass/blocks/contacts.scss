@@ -1,0 +1,153 @@
+.contacts {
+  padding-top: 120px;
+  padding-bottom: 121px;
+
+  @media (max-width: $max-tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding-top: 40px;
+    padding-bottom: 65px;
+  }
+}
+
+.contacts__container {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 20px 100px;
+  flex-wrap: wrap;
+
+  @media (max-width: $max-tablet) {
+    gap: 20px 30px;
+  }
+
+  @media (max-width: $max-mobile) {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+
+.contacts__map {
+  flex-grow: 0;
+  width: 100%;
+  min-width: 324px;
+  max-width: 560px;
+
+  @media (max-width: $max-mobile) {
+    order: 1;
+    min-width: auto;
+    max-width: none;
+    min-height: 316px;
+  }
+}
+
+.contacts__map-iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contacts__map-iframe iframe {
+  width: 100%;
+  height: 100%;
+
+  border: 0;
+}
+
+.contacts__map-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.contacts__map-link img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  @media (max-width: $max-tablet) {
+    aspect-ratio: 324/325;
+  }
+
+  @media (max-width: $max-mobile) {
+    aspect-ratio: 290/316;
+  }
+}
+
+.contacts__content {
+  max-width: 500px;
+  padding-top: 56px;
+  padding-bottom: 75px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (max-width: $max-tablet) {
+    padding-top: 48px;
+    padding-bottom: 66px;
+  }
+
+  @media (max-width: $max-mobile) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.contacts__content p {
+  margin-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+
+  @media (max-width: $max-tablet) {
+    margin-bottom: 27px;
+  }
+}
+
+.contacts__link {
+  display: block;
+  width: fit-content;
+  padding-left: 29px;
+
+  color: #011c40;
+  text-decoration: none;
+
+  background-repeat: no-repeat;
+  background-position: 0 center;
+
+  &:hover,
+  &:focus {
+    text-decoration: 2px;
+
+    outline: none;
+
+    text-decoration-color: inherit;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 6px;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.contacts__link--map {
+  margin-bottom: 22px;
+
+  background-image: url("../img/svg/icon-marker.svg");
+
+  @media (max-width: $max-tablet) {
+    background-position: 0 5px;
+  }
+}
+
+.contacts__link--tel {
+  background-image: url("../img/svg/icon-phone.svg");
+}
+
+.no-js .contacts__map-iframe {
+  display: none;
+}

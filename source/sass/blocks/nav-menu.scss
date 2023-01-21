@@ -1,0 +1,48 @@
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (max-width: $max-mobile) {
+    flex-direction: column;
+  }
+}
+
+.nav-menu__item {
+  margin-left: 34px;
+
+  @media (max-width: $max-tablet) {
+    margin-left: 24px;
+  }
+}
+
+.nav-menu__link {
+  font-weight: 500;
+  color: #f9fbfd;
+  text-decoration: none;
+
+  @media (max-width: $max-tablet) {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  @media (max-width: $max-mobile) {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: 2px;
+
+    outline: none;
+
+    text-decoration-color: inherit;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-offset: 6px;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
