@@ -7,13 +7,13 @@
   background-size: cover;
   // background-image: url("../img/booking-bg-desktop.jpg");
 
-  @include retina-bg("../img/abooking-bg-desktop", $file_ext: "jpg");
+  @include retina-bg("../img/booking-bg-desktop", $file_ext: "jpg");
 
   @media (max-width: $max-tablet) {
     padding-bottom: 99px;
     // background-image: url("../img/booking-bg-tablet.jpg");
 
-    @include retina-bg("../img/abooking-bg-tablet", $file_ext: "jpg");
+    @include retina-bg("../img/booking-bg-tablet", $file_ext: "jpg");
   }
 
   @media (max-width: $max-mobile) {
@@ -21,7 +21,7 @@
     padding-bottom: 65px;
     // background-image: url("../img/booking-bg-mobile.jpg");
 
-    @include retina-bg("../img/abooking-bg-mobile", $file_ext: "jpg");
+    @include retina-bg("../img/booking-bg-mobile", $file_ext: "jpg");
   }
 }
 
