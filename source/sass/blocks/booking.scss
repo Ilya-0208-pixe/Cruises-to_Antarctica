@@ -29,6 +29,7 @@
   display: grid;
   grid-template-columns: repeat(2, auto);
   gap: 65px;
+  align-items: center;
 
   @media (max-width: $max-tablet) {
     display: block;
@@ -36,7 +37,7 @@
 }
 
 .booking__content {
-  padding: 131px 20px 20px 60px;
+  padding: 0 20px 40px 60px;
 
   @media (max-width: $max-tablet) {
     padding: 40px 40px 52px;
@@ -127,7 +128,7 @@
   font-size: 14px;
   line-height: 21px;
   font-family: $font-family;
-  color: rgba(1, 28, 64, 0.7);
+  color: #011c40;
 
   background-color: #f9fbfd;
   border: 2px solid transparent;
