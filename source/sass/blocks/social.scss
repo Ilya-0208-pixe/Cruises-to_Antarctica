@@ -3,6 +3,7 @@
 
   gap: 25px;
   grid-template-columns: repeat(3, auto);
+  align-self: baseline;
 
   @media (max-width: $max-tablet) {
     gap: 22px;
